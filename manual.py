@@ -1,10 +1,11 @@
+import scapy
 import scapy.all as scapy
 # import regular expressions for correct format of input checking
 import re
 # title thing -
 print("##############################    -  Starting Manual WiFi Device Scanner  -   ##############################")
 print("!!!- This program is only to be used for Education and NOT any form of malicious activity by any means. -!!!")
-print("######### - Scanner requires scapy install. - #########")
+print("################################ - Scanner requires scapy to be installed. - ################################")
 
 # regular expression pattern to know what an IPv4 is
 ip_add_range_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]*$")
@@ -19,5 +20,3 @@ while True:
 
 arp_result = scapy.arping(ip_add_range_entered)
 # Above checks devices for us using ARP.import scapy
-import scapy.all as scapy
-# import regular expressions for correct format of input checking
